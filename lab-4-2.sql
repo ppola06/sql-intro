@@ -5,6 +5,8 @@
 -- WHERE column1 = expression1
 -- AND column2 = expression2
 
+SELECT first_name, last_name FROM players JOIN stats ON players.id = stats.player_id JOIN teams ON stats.team_id = teams.id WHERE teams.year = 2020 AND teams.name = "Chicago Cubs";
+
 -- Expected result: 47 rows starting with
 --
 -- +------------+-----------+
